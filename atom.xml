@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-21T07:51:21.840Z</updated>
+  <updated>2020-01-21T07:06:07.599Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>cocos2d-creator</title>
-    <link href="http://yoursite.com/2020/01/21/cocos2d-creator/"/>
-    <id>http://yoursite.com/2020/01/21/cocos2d-creator/</id>
-    <published>2020-01-21T07:50:28.000Z</published>
-    <updated>2020-01-21T07:51:21.840Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;em&gt;这是我近期学习cocos2d_creator的收获，主要是关于js脚本编写。&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;场景切换&quot;&gt;&lt;a href=&quot;#场景切换&quot; class=&quot;headerlink&quot; title=&quot;场景切换&quot;&gt;&lt;/a&gt;场景切换&lt;/h2&gt;&lt;figure
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="js , cocos2d-creator" scheme="http://yoursite.com/tags/js-cocos2d-creator/"/>
-    
-  </entry>
   
   <entry>
     <title>cocos2d-creator</title>

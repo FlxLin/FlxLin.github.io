@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-21T08:50:03.689Z</updated>
+  <updated>2020-01-29T02:54:49.549Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python关于socket编程</title>
+    <link href="http://yoursite.com/2020/01/29/Python%E5%85%B3%E4%BA%8Esocket%E7%BC%96%E7%A8%8B/"/>
+    <id>http://yoursite.com/2020/01/29/Python%E5%85%B3%E4%BA%8Esocket%E7%BC%96%E7%A8%8B/</id>
+    <published>2020-01-29T02:45:32.000Z</published>
+    <updated>2020-01-29T02:54:49.549Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;套接字（socket）是一个抽象层，应用程序可以通过它发送或接收数据，可对其进行像对文件一样的打开、读写和关闭等操作。套接字允许应用程序将I/O插入到网络中，并与网络中的其他应用程序进行通信。网络套接字是IP地址与端口的组合。采用python实现了简单了服务器与客户端的交互。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;服务端&quot;&gt;&lt;a href=&quot;#服务端&quot; class=&quot;headerlink&quot; title=&quot;服务端&quot;&gt;&lt;/a&gt;服务端&lt;/h2&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Python, socket" scheme="http://yoursite.com/tags/Python-socket/"/>
+    
+  </entry>
   
   <entry>
     <title>cocos2d-creator</title>

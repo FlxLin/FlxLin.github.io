@@ -3,7 +3,7 @@
   <entry>
     <title>Python实现简单的通信协议</title>
     <url>/2020/02/01/Python%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
-    <content><![CDATA[<p><em>使用socket实现的的一个简单的自定义协议，模拟实现了QQ的小部分功能。其中设计到json的使用，以及多线程的创建等等。</em></p>
+    <content><![CDATA[<p><em>使用socket实现的的一个简单的自定义协议，模拟实现了QQ的小部分功能。其中涉及到json的使用，以及多线程的创建等等。</em></p>
 <h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
 <li>多用户连接</li>
 <li>即时通讯</li>

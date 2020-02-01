@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-29T02:54:49.549Z</updated>
+  <updated>2020-02-01T02:51:36.857Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python实现简单的通信协议</title>
+    <link href="http://yoursite.com/2020/02/01/Python%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://yoursite.com/2020/02/01/Python%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</id>
+    <published>2020-02-01T02:42:51.000Z</published>
+    <updated>2020-02-01T02:51:36.857Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;使用socket实现的的一个简单的自定义协议，模拟实现了QQ的小部分功能。其中设计到json的使用，以及多线程的创建等等。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;主要功能&quot;&gt;&lt;a href=&quot;#主要功能&quot; class=&quot;headerlink&quot; title=&quot;主要功能&quot;&gt;&lt;/a&gt;主要功能&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;多用户连接&lt;/li&gt;
+&lt;li&gt;即时通讯&lt;/li&gt;
+&lt;li&gt;登陆，退出&lt;/li&gt;
+&lt;li&gt;历史消息&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Python, socket" scheme="http://yoursite.com/tags/Python-socket/"/>
+    
+  </entry>
   
   <entry>
     <title>Python关于socket编程</title>

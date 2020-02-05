@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-01T02:55:46.118Z</updated>
+  <updated>2020-02-05T02:13:16.353Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>有道翻译--爬虫</title>
+    <link href="http://yoursite.com/2020/02/05/%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91-%E7%88%AC%E8%99%AB/"/>
+    <id>http://yoursite.com/2020/02/05/%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91-%E7%88%AC%E8%99%AB/</id>
+    <published>2020-02-05T02:08:32.000Z</published>
+    <updated>2020-02-05T02:13:16.353Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;使用requests, json实现的的一个简单的爬虫，爬取了有道翻译，可实现自动翻译的功能。&lt;/em&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Pyhton, 爬虫" scheme="http://yoursite.com/tags/Pyhton-%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>Python实现简单的通信协议</title>

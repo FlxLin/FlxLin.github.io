@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-05T02:13:16.353Z</updated>
+  <updated>2020-02-09T12:01:25.713Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[post]Python配合ffmpeg爬取视频</title>
+    <link href="http://yoursite.com/2020/02/09/post-Python%E9%85%8D%E5%90%88ffmpeg%E7%88%AC%E5%8F%96%E8%A7%86%E9%A2%91/"/>
+    <id>http://yoursite.com/2020/02/09/post-Python%E9%85%8D%E5%90%88ffmpeg%E7%88%AC%E5%8F%96%E8%A7%86%E9%A2%91/</id>
+    <published>2020-02-09T11:39:20.000Z</published>
+    <updated>2020-02-09T12:01:25.713Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;em&gt;主要采用python配合ffmpeg对一些视频进行爬取，需要配置ffmpeg才能运行。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Python代码&quot;&gt;&lt;a href=&quot;#Python代码&quot; class=&quot;headerlink&quot; title=&quot;Python代码&quot;&gt;&lt;/a&gt;Python代码&lt;/h2&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Python，ffmpeg" scheme="http://yoursite.com/tags/Python%EF%BC%8Cffmpeg/"/>
+    
+  </entry>
   
   <entry>
     <title>有道翻译--爬虫</title>

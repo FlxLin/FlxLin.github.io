@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-16T12:01:52.624Z</updated>
+  <updated>2020-02-16T12:14:28.668Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="http://yoursite.com/2020/02/16/webpack-dev-server/"/>
     <id>http://yoursite.com/2020/02/16/webpack-dev-server/</id>
     <published>2020-02-16T11:51:29.000Z</published>
-    <updated>2020-02-16T12:01:52.624Z</updated>
+    <updated>2020-02-16T12:14:28.668Z</updated>
     
     <summary type="html">
     
       &lt;h2 id=&quot;webpack-dev-server&quot;&gt;&lt;a href=&quot;#webpack-dev-server&quot; class=&quot;headerlink&quot; title=&quot;webpack-dev-server&quot;&gt;&lt;/a&gt;webpack-dev-server&lt;/h2&gt;&lt;p&gt;&lt;em&gt;webpack-dev-server开发服务器，它的功能可以实现热加载 并且自动刷新浏览器&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;####安装&lt;br&gt;    npm install &lt;a href=&quot;mailto:webpack@3.6.0&quot;&gt;webpack@3.6.0&lt;/a&gt; webpack-dev-server@2.9.1 &lt;a href=&quot;mailto:html-webpack-plugin@2.30.1&quot;&gt;html-webpack-plugin@2.30.1&lt;/a&gt; –save-dev &lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;npm install webpack@3.6.0 webpack-dev-server@2.9.1 html-webpack-plugin@2.30.1 --save-dev &lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     

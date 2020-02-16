@@ -45,7 +45,7 @@
       </tags>
   </entry>
   <entry>
-    <title>[post]Python配合ffmpeg爬取视频</title>
+    <title>Python配合ffmpeg爬取视频</title>
     <url>/2020/02/09/Python%E9%85%8D%E5%90%88ffmpeg%E7%88%AC%E5%8F%96%E8%A7%86%E9%A2%91/</url>
     <content><![CDATA[<p><em>主要采用python配合ffmpeg对一些视频进行爬取，需要配置ffmpeg才能运行。</em></p>
 <h2 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h2><a id="more"></a>

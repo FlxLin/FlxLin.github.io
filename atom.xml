@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-09T12:01:25.713Z</updated>
+  <updated>2020-02-16T07:27:00.597Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,55 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>webpack实践</title>
+    <link href="http://yoursite.com/2020/02/16/webpack%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://yoursite.com/2020/02/16/webpack%E5%AE%9E%E8%B7%B5/</id>
+    <published>2020-02-16T07:05:18.000Z</published>
+    <updated>2020-02-16T07:27:00.597Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Webpack介绍&quot;&gt;&lt;a href=&quot;#Webpack介绍&quot; class=&quot;headerlink&quot; title=&quot;Webpack介绍&quot;&gt;&lt;/a&gt;Webpack介绍&lt;/h2&gt;&lt;p&gt;&lt;em&gt;Webpack 是一个前端资源的打包工具，它可以将js、image、css等资源当成一个模块进行打包。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模块化开发&lt;br&gt;程序员在开发时可以分模块创建不同的js、 css等小文件方便开发，最后使用webpack将这些小文件打包成一个文 件，减少了http的请求次数。 webpack可以实现按需打包，为了避免出现打包文件过大可以打包成多个文件。&lt;/li&gt;
+&lt;li&gt;编译typescript、ES6等高级js语法&lt;br&gt;随着前端技术的强大，开发中可以使用javascript的很多高级版本，比如：typescript、ES6等，方便开发， webpack可以将打包文件转换成浏览器可识别的js语法。 &lt;/li&gt;
+&lt;li&gt;CSS预编译&lt;br&gt;webpack允许在开发中使用Sass 和 Less等原生CSS的扩展技术，通过sass-loader、less-loader将Sass 和 Less的 语法编译成浏览器可识别的css语法&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Wehpack" scheme="http://yoursite.com/tags/Wehpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue.js入门</title>
+    <link href="http://yoursite.com/2020/02/16/vue-js%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/2020/02/16/vue-js%E5%85%A5%E9%97%A8/</id>
+    <published>2020-02-16T07:04:56.000Z</published>
+    <updated>2020-02-16T07:18:25.563Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Vue是什么？&quot;&gt;&lt;a href=&quot;#Vue是什么？&quot; class=&quot;headerlink&quot; title=&quot;Vue是什么？&quot;&gt;&lt;/a&gt;Vue是什么？&lt;/h2&gt;&lt;p&gt;&lt;em&gt;Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计 为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一 方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。 渐进式框架：Progressive，说明vue.js的轻量，是指一个前端项目可以使用vue.js一两个特性也可以整个项目都用 vue.js。&lt;br&gt;自底向上逐层应用：作为渐进式框架要实现的目标就是方便项目增量开发。&lt;/em&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Vue" scheme="http://yoursite.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
     <title>[post]Python配合ffmpeg爬取视频</title>
     <link href="http://yoursite.com/2020/02/09/Python%E9%85%8D%E5%90%88ffmpeg%E7%88%AC%E5%8F%96%E8%A7%86%E9%A2%91/"/>
     <id>http://yoursite.com/2020/02/09/Python%E9%85%8D%E5%90%88ffmpeg%E7%88%AC%E5%8F%96%E8%A7%86%E9%A2%91/</id>
     <published>2020-02-09T11:39:20.000Z</published>
-    <updated>2020-02-09T12:01:25.713Z</updated>
+    <updated>2020-02-16T07:08:40.737Z</updated>
     
     <summary type="html">
     
@@ -32,7 +76,7 @@
     
     
     
-      <category term="Python，ffmpeg" scheme="http://yoursite.com/tags/Python%EF%BC%8Cffmpeg/"/>
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
   </entry>
   
@@ -41,7 +85,7 @@
     <link href="http://yoursite.com/2020/02/05/%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91-%E7%88%AC%E8%99%AB/"/>
     <id>http://yoursite.com/2020/02/05/%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91-%E7%88%AC%E8%99%AB/</id>
     <published>2020-02-05T02:08:32.000Z</published>
-    <updated>2020-02-05T02:13:16.353Z</updated>
+    <updated>2020-02-16T07:08:32.115Z</updated>
     
     <summary type="html">
     
@@ -51,7 +95,7 @@
     
     
     
-      <category term="Pyhton, 爬虫" scheme="http://yoursite.com/tags/Pyhton-%E7%88%AC%E8%99%AB/"/>
+      <category term="Pyhton" scheme="http://yoursite.com/tags/Pyhton/"/>
     
   </entry>
   
@@ -85,7 +129,7 @@
     <link href="http://yoursite.com/2020/01/29/Python%E5%85%B3%E4%BA%8Esocket%E7%BC%96%E7%A8%8B/"/>
     <id>http://yoursite.com/2020/01/29/Python%E5%85%B3%E4%BA%8Esocket%E7%BC%96%E7%A8%8B/</id>
     <published>2020-01-29T02:45:32.000Z</published>
-    <updated>2020-01-29T02:54:49.549Z</updated>
+    <updated>2020-02-16T07:07:27.608Z</updated>
     
     <summary type="html">
     
@@ -96,7 +140,7 @@
     
     
     
-      <category term="Python, socket" scheme="http://yoursite.com/tags/Python-socket/"/>
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
   </entry>
   
@@ -105,18 +149,17 @@
     <link href="http://yoursite.com/2020/01/21/2020-01-21-cocos2d-creator/"/>
     <id>http://yoursite.com/2020/01/21/2020-01-21-cocos2d-creator/</id>
     <published>2020-01-21T06:24:16.000Z</published>
-    <updated>2020-01-21T08:50:03.689Z</updated>
+    <updated>2020-02-16T07:07:25.759Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;&lt;em&gt;这是我近期学习cocos2d_creator的收获，主要是关于js脚本编写。&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;场景切换&quot;&gt;&lt;a href=&quot;#场景切换&quot; class=&quot;headerlink&quot; title=&quot;场景切换&quot;&gt;&lt;/a&gt;场景切换&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cc.Class(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    extends: cc.Component,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    properties: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// foo: &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//     // ATTRIBUTES:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//     default: null,        // The default value will be used only when the component attaching&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//                           // to a node for the first time&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//     type: cc.SpriteFrame, // optional, default is typeof default&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//     serializable: true,   // optional, default is true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// &amp;#125;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// bar: &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//     get () &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//         return this._bar;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//     &amp;#125;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//     set (value) &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//         this._bar = value;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//     &amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// &amp;#125;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// LIFE-CYCLE CALLBACKS:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    onLoad () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;scenesChangesMS&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;t&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            cc.director.loadScene(&lt;span class=&quot;string&quot;&gt;&quot;main_scenes&quot;&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//场景切换函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.node.on(cc.Node.EventType.TOUCH_END,scenesChangesMS,&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//打开触摸事件监控,on方法会给my_func方法传递一个TONCH类型的参数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    start () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// update (dt) &amp;#123;&amp;#125;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
     
     
-      <category term="js , cocos2d-creator" scheme="http://yoursite.com/tags/js-cocos2d-creator/"/>
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
     
   </entry>
   

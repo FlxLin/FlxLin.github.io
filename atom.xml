@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-18T06:41:46.490Z</updated>
+  <updated>2020-02-18T06:46:25.690Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,16 @@
     <link href="http://yoursite.com/2020/02/18/proxyTable%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/"/>
     <id>http://yoursite.com/2020/02/18/proxyTable%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</id>
     <published>2020-02-18T05:37:06.000Z</published>
-    <updated>2020-02-18T06:41:46.490Z</updated>
+    <updated>2020-02-18T06:46:25.690Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;跨域问题报错&quot;&gt;&lt;a href=&quot;#跨域问题报错&quot; class=&quot;headerlink&quot; title=&quot;跨域问题报错&quot;&gt;&lt;/a&gt;跨域问题报错&lt;/h2&gt;&lt;p&gt;&lt;em&gt;No ‘Access-Control-Allow-Origin’ header is
-        
-      
+      &lt;h2 id=&quot;跨域问题报错&quot;&gt;&lt;a href=&quot;#跨域问题报错&quot; class=&quot;headerlink&quot; title=&quot;跨域问题报错&quot;&gt;&lt;/a&gt;跨域问题报错&lt;/h2&gt;&lt;p&gt;&lt;em&gt;No ‘Access-Control-Allow-Origin’ header is present on the requested resource.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原因：浏览器的同源策略不允许跨域访问，所谓同源策略是指协议、域名、端口相同。&lt;/li&gt;
+&lt;li&gt;解决：采用proxyTable解决。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;proxyTable是什么？&quot;&gt;&lt;a href=&quot;#proxyTable是什么？&quot; class=&quot;headerlink&quot; title=&quot;proxyTable是什么？&quot;&gt;&lt;/a&gt;proxyTable是什么？&lt;/h2&gt;&lt;p&gt;&lt;em&gt;vue-cli提供的解决vue开发环境下跨域问题的方法，proxyTable的底层使用了http-proxymiddleware（&lt;a href=&quot;https://github.com/chimurai/http-proxy-middleware）&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/chimurai/http-proxy-middleware）&lt;/a&gt; ，它是http代理中间件，它依赖node.js， 基本原理是用服务端代理解决浏览器跨域：&lt;/em&gt;&lt;/p&gt;
     
     </summary>
     

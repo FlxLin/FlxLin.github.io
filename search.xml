@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>跨域问题</title>
+    <url>/2020/02/18/proxyTable%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>webpack-dev-server</title>
     <url>/2020/02/16/webpack-dev-server/</url>
     <content><![CDATA[<h2 id="webpack-dev-server"><a href="#webpack-dev-server" class="headerlink" title="webpack-dev-server"></a>webpack-dev-server</h2><p><em>webpack-dev-server开发服务器，它的功能可以实现热加载 并且自动刷新浏览器</em></p>

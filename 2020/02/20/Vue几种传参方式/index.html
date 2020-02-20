@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
-    跨域问题 |
+    Vue几种传参方式 |
     
     Linn</title>
   
@@ -32,7 +32,7 @@
   <section class="outer">
   
 
-<article id="post-proxyTable跨域问题" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+<article id="post-Vue几种传参方式" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
   
   <div class="article-inner">
     
@@ -40,7 +40,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      跨域问题
+      Vue几种传参方式
     </h1>
   
   
@@ -53,8 +53,8 @@
 
     
       <div class="article-meta">
-        <a href="/2020/02/18/proxyTable%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" class="article-date">
-  <time datetime="2020-02-18T05:37:06.000Z" itemprop="datePublished">2020-02-18</time>
+        <a href="/2020/02/20/Vue%E5%87%A0%E7%A7%8D%E4%BC%A0%E5%8F%82%E6%96%B9%E5%BC%8F/" class="article-date">
+  <time datetime="2020-02-20T10:16:40.000Z" itemprop="datePublished">2020-02-20</time>
 </a>
         
       </div>
@@ -77,20 +77,23 @@
       
 
       
-        <h2 id="跨域问题报错"><a href="#跨域问题报错" class="headerlink" title="跨域问题报错"></a>跨域问题报错</h2><p><em>No ‘Access-Control-Allow-Origin’ header is present on the requested resource.</em></p>
-<ul>
-<li>原因：浏览器的同源策略不允许跨域访问，所谓同源策略是指协议、域名、端口相同。</li>
-<li>解决：采用proxyTable解决。</li>
+        <h2 id="Vue常见的传参方式"><a href="#Vue常见的传参方式" class="headerlink" title="Vue常见的传参方式"></a>Vue常见的传参方式</h2><ul>
+<li>URL传参</li>
 </ul>
-<h2 id="proxyTable是什么？"><a href="#proxyTable是什么？" class="headerlink" title="proxyTable是什么？"></a>proxyTable是什么？</h2><p><em>vue-cli提供的解决vue开发环境下跨域问题的方法，proxyTable的底层使用了http-proxymiddleware（<a href="https://github.com/chimurai/http-proxy-middleware）" target="_blank" rel="noopener">https://github.com/chimurai/http-proxy-middleware）</a> ，它是http代理中间件，它依赖node.js， 基本原理是用服务端代理解决浏览器跨域：</em></p>
-<a id="more"></a>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//路由定义</span></span><br><span class="line">&#123;<span class="attr">path</span>:<span class="string">'/cms/page/edit/:pageId'</span>,<span class="attr">name</span>:<span class="string">'修改页面'</span>,<span class="attr">component</span>: Page_edit,<span class="attr">hidden</span>:<span class="literal">true</span>&#125;</span><br><span class="line"><span class="comment">//：+ 参数名</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//使用方法</span></span><br><span class="line"><span class="keyword">this</span>.$router.push(&#123;</span><br><span class="line">          path:<span class="string">'/cms/page/edit/'</span> + pageId</span><br><span class="line">        &#125;)</span><br></pre></td></tr></table></figure>
 
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">'use strict'</span></span><br><span class="line"><span class="comment">// Template version: 1.2.4</span></span><br><span class="line"><span class="comment">// see http://vuejs-templates.github.io/webpack for documentation.</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>)</span><br><span class="line"><span class="keyword">var</span> proxyConfig = <span class="built_in">require</span>(<span class="string">'./proxyConfig'</span>)</span><br><span class="line"><span class="keyword">let</span> sysConfig = <span class="built_in">require</span>(<span class="string">'./sysConfig'</span>)</span><br><span class="line"><span class="keyword">let</span> xcApiUrl = sysConfig.xcApiUrl</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  dev: &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Paths</span></span><br><span class="line">    assetsSubDirectory: <span class="string">'static'</span>,</span><br><span class="line">    assetsPublicPath: <span class="string">'/'</span>,</span><br><span class="line">    <span class="comment">//proxyTable: proxyConfig.proxyList,</span></span><br><span class="line">    proxyTable: &#123;</span><br><span class="line">      <span class="string">'/api/cms'</span>: &#123;</span><br><span class="line">        target: <span class="string">'http://localhost:31001'</span>,<span class="comment">//转发地址</span></span><br><span class="line">        pathRewrite: &#123;</span><br><span class="line">          <span class="string">'^/api'</span>: <span class="string">''</span><span class="comment">//将api去除</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//target: 'http://127.0.0.1:50201'</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<ul>
+<li><p>使用query传参</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//直接使用vue自带的to</span></span><br><span class="line">&lt;router-link <span class="class"><span class="keyword">class</span></span>=<span class="string">"mui-tab-item"</span> :to=<span class="string">"&#123;path:'/cms/page/add/' , query:&#123;</span></span><br><span class="line"><span class="string">    page: this.params.page,</span></span><br><span class="line"><span class="string">    siteId: this.params.siteId</span></span><br><span class="line"><span class="string">&#125;&#125;"</span> &gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>取出参数</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//取出url里面的参数</span></span><br><span class="line"> <span class="keyword">this</span>.$router.push(&#123;<span class="comment">//跳转到地址/cms/page/list</span></span><br><span class="line">          path:<span class="string">'/cms/page/list'</span>,</span><br><span class="line">          query:&#123;<span class="comment">//取出路由里的参数，并且作为path的参数传递</span></span><br><span class="line">            page : <span class="keyword">this</span>.$route.query.page,</span><br><span class="line">            siteId : <span class="keyword">this</span>.$route.query.siteId</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//取出query参数</span></span><br><span class="line">  created() &#123;</span><br><span class="line">      <span class="comment">//vue实例创建完，调用</span></span><br><span class="line">      <span class="keyword">this</span>.params.page = <span class="built_in">Number</span>.parseInt(<span class="keyword">this</span>.$route.query.page || <span class="number">1</span>);</span><br><span class="line">      <span class="keyword">this</span>.params.siteId = <span class="keyword">this</span>.$route.query.siteId || <span class="string">""</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.flxlin.github.io/2020/02/18/proxyTable%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" data-id="ck6rifjpl0000o8c92xxag9qi"
+      <a data-url="https://www.flxlin.github.io/2020/02/20/Vue%E5%87%A0%E7%A7%8D%E4%BC%A0%E5%8F%82%E6%96%B9%E5%BC%8F/" data-id="ck6um2bt000006cc98uhac90z"
          class="article-share-link">Share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/" rel="tag">Vue</a></li></ul>
@@ -103,19 +106,10 @@
     
   <nav class="article-nav">
     
-      <a href="/2020/02/20/Vue%E5%87%A0%E7%A7%8D%E4%BC%A0%E5%8F%82%E6%96%B9%E5%BC%8F/" class="article-nav-link">
-        <strong class="article-nav-caption">Newer</strong>
-        <div class="article-nav-title">
-          
-            Vue几种传参方式
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/02/16/webpack-dev-server/" class="article-nav-link">
+      <a href="/2020/02/18/proxyTable%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98/" class="article-nav-link">
         <strong class="article-nav-caption">Older</strong>
-        <div class="article-nav-title">webpack-dev-server</div>
+        <div class="article-nav-title">跨域问题</div>
       </a>
     
   </nav>

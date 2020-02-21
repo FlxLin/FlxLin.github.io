@@ -81,6 +81,7 @@
 <li>URL传参</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//路由定义</span></span><br><span class="line">&#123;<span class="attr">path</span>:<span class="string">'/cms/page/edit/:pageId'</span>,<span class="attr">name</span>:<span class="string">'修改页面'</span>,<span class="attr">component</span>: Page_edit,<span class="attr">hidden</span>:<span class="literal">true</span>&#125;</span><br><span class="line"><span class="comment">//：+ 参数名</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//使用方法</span></span><br><span class="line"><span class="keyword">this</span>.$router.push(&#123;</span><br><span class="line">          path:<span class="string">'/cms/page/edit/'</span> + pageId</span><br><span class="line">        &#125;)</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 
 <ul>
 <li><p>使用query传参</p>

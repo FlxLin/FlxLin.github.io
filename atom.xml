@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.flxlin.github.io/"/>
-  <updated>2020-02-20T10:36:48.131Z</updated>
+  <updated>2020-02-21T11:52:38.253Z</updated>
   <id>https://www.flxlin.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>页面静态化</title>
+    <link href="https://www.flxlin.github.io/2020/02/21/%E9%A1%B5%E9%9D%A2%E9%9D%99%E6%80%81%E5%8C%96/"/>
+    <id>https://www.flxlin.github.io/2020/02/21/%E9%A1%B5%E9%9D%A2%E9%9D%99%E6%80%81%E5%8C%96/</id>
+    <published>2020-02-21T11:33:45.000Z</published>
+    <updated>2020-02-21T11:52:38.253Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;页面静态化&quot;&gt;&lt;a href=&quot;#页面静态化&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Freemarker" scheme="https://www.flxlin.github.io/tags/Freemarker/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue几种传参方式</title>

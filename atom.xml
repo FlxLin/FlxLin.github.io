@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.flxlin.github.io/"/>
-  <updated>2020-02-23T13:58:31.639Z</updated>
+  <updated>2020-02-23T14:00:21.118Z</updated>
   <id>https://www.flxlin.github.io/</id>
   
   <author>
@@ -21,17 +21,13 @@
     <link href="https://www.flxlin.github.io/2020/02/23/%E9%A1%B5%E9%9D%A2%E9%9D%99%E6%80%81%E5%8C%96%E5%AE%9E%E7%8E%B0/"/>
     <id>https://www.flxlin.github.io/2020/02/23/%E9%A1%B5%E9%9D%A2%E9%9D%99%E6%80%81%E5%8C%96%E5%AE%9E%E7%8E%B0/</id>
     <published>2020-02-23T13:49:33.000Z</published>
-    <updated>2020-02-23T13:58:31.639Z</updated>
+    <updated>2020-02-23T14:00:21.118Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;RestTemplate&quot;&gt;&lt;a href=&quot;#RestTemplate&quot; class=&quot;headerlink&quot; title=&quot;RestTemplate&quot;&gt;&lt;/a&gt;RestTemplate&lt;/h2&gt;&lt;p&gt;&lt;em&gt;SpringMVC提供
-        
-      
+      &lt;h2 id=&quot;RestTemplate&quot;&gt;&lt;a href=&quot;#RestTemplate&quot; class=&quot;headerlink&quot; title=&quot;RestTemplate&quot;&gt;&lt;/a&gt;RestTemplate&lt;/h2&gt;&lt;p&gt;&lt;em&gt;SpringMVC提供 RestTemplate请求http接口，RestTemplate的底层可以使用第三方的http客户端工具实现http 的请求，常用的http客户端工具有Apache HttpClient、OkHttpClient等&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;配置依赖&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;groupId&amp;gt;com.squareup.okhttp3&amp;lt;&amp;#x2F;groupId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;artifactId&amp;gt;okhttp&amp;lt;&amp;#x2F;artifactId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&amp;#x2F;dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     

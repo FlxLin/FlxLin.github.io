@@ -85,17 +85,15 @@
     <link href="https://www.flxlin.github.io/2020/02/21/%E9%A1%B5%E9%9D%A2%E9%9D%99%E6%80%81%E5%8C%96/"/>
     <id>https://www.flxlin.github.io/2020/02/21/%E9%A1%B5%E9%9D%A2%E9%9D%99%E6%80%81%E5%8C%96/</id>
     <published>2020-02-21T11:33:45.000Z</published>
-    <updated>2020-02-21T11:54:53.103Z</updated>
+    <updated>2020-02-24T10:18:10.959Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;页面静态化&quot;&gt;&lt;a href=&quot;#页面静态化&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;页面静态化&quot;&gt;&lt;a href=&quot;#页面静态化&quot; class=&quot;headerlink&quot; title=&quot;页面静态化&quot;&gt;&lt;/a&gt;页面静态化&lt;/h2&gt;&lt;p&gt;&lt;em&gt;模板+数据模型=输出，页面静态化需要准备数据模型和模板，先知道数据模型的结构才可以编写模板，因为在模板中要引用数据模型中的数据&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如何对页面进行静态化&lt;br&gt;一个页面等于模板加数据，在添加页面的时候我们选择了页面的模板。页面静态化就是将页面模板和数据通过技术手段将二者合二为一，生成一个html网页文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Freemarker&quot;&gt;&lt;a href=&quot;#Freemarker&quot; class=&quot;headerlink&quot; title=&quot;Freemarker&quot;&gt;&lt;/a&gt;Freemarker&lt;/h2&gt;&lt;p&gt;FreeMarker是一个基于Java的模板引擎，最初专注于使用MVC软件架构生成动态网页。freemarker并不关心数据的来源，只是根据模板的内容，将数据模型在模板中显示并输出文件（通常为html，也可以生成其它格式的文本文件）&lt;/p&gt;
     
     </summary>
     

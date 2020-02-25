@@ -65,6 +65,82 @@
         
           
 
+<article id="post-Spring整合Rabbitmq" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2020/02/25/Spring%E6%95%B4%E5%90%88Rabbitmq/">Spring整合Rabbitmq</a>
+    </h2>
+  
+  
+
+
+
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2020/02/25/Spring%E6%95%B4%E5%90%88Rabbitmq/" class="article-date">
+  <time datetime="2020-02-25T12:43:54.000Z" itemprop="datePublished">2020-02-25</time>
+</a>
+        
+      </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+        <p><strong>配置依赖</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring‐boot‐starter‐amqp<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring‐boot‐starter‐test<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>配置application.yml</strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">    <span class="attr">port:</span> <span class="number">44000</span></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">    <span class="attr">application:</span></span><br><span class="line">        <span class="attr">name:</span> <span class="string">test‐rabbitmq‐producer</span></span><br><span class="line"><span class="attr">rabbitmq:</span></span><br><span class="line">    <span class="attr">host:</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span></span><br><span class="line">    <span class="attr">port:</span> <span class="number">5672</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">guest</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">guest</span></span><br><span class="line">    <span class="attr">virtualHost:</span> <span class="string">/</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>定义配置类</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//生产者与消费者的配置类一致</span></span><br><span class="line"><span class="meta">@Configuration</span><span class="comment">//相当于bean</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RabbitmqConfig</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String QUEUE_INFORM_EMAIL = <span class="string">"queue_inform_email"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String QUEUE_INFORM_SMS = <span class="string">"queue_inform_sms"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String EXCHANGE_TOPICS_INFORM=<span class="string">"exchange_topics_inform"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//声明交换机</span></span><br><span class="line">    <span class="meta">@Bean</span>(EXCHANGE_TOPICS_INFORM)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Exchange <span class="title">EXCHANGE_TOPICS_INFORM</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="comment">//durable(true) 持久化，重启mq， 交换机依旧存在</span></span><br><span class="line">        <span class="keyword">return</span> ExchangeBuilder.topicExchange(EXCHANGE_TOPICS_INFORM).durable(<span class="keyword">true</span>).build();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//声明队列</span></span><br><span class="line">    <span class="meta">@Bean</span>(QUEUE_INFORM_EMAIL)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Queue <span class="title">QUEUE_INFORM_EMAIL</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Queue(QUEUE_INFORM_EMAIL);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Bean</span>(QUEUE_INFORM_SMS)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Queue <span class="title">QUEUE_INFORM_SMS</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Queue(QUEUE_INFORM_SMS);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//队列绑定交换机</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Binding <span class="title">BINDING_QUEUE_INFORM_EMAIL</span><span class="params">(@Qualifier(QUEUE_INFORM_EMAIL)</span> Queue queue,</span></span><br><span class="line"><span class="function">                                              @<span class="title">Qualifier</span><span class="params">(EXCHANGE_TOPICS_INFORM)</span> Exchange exchange)</span>&#123;</span><br><span class="line">        <span class="comment">//with(routingKey)</span></span><br><span class="line">        <span class="keyword">return</span> BindingBuilder.bind(queue).to(exchange).with(QUEUE_INFORM_EMAIL).noargs();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Binding <span class="title">BINDING_QUEUE_INFORM_SMS</span><span class="params">(@Qualifier(QUEUE_INFORM_SMS)</span> Queue queue,</span></span><br><span class="line"><span class="function">                                            @<span class="title">Qualifier</span><span class="params">(EXCHANGE_TOPICS_INFORM)</span> Exchange exchange)</span>&#123;</span><br><span class="line">        <span class="comment">//with(routingKey)</span></span><br><span class="line">        <span class="keyword">return</span> BindingBuilder.bind(queue).to(exchange).with(QUEUE_INFORM_SMS).noargs();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>生产者代码</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootTest</span></span><br><span class="line"><span class="meta">@RunWith</span>(SpringRunner<span class="class">.<span class="keyword">class</span>)</span></span><br><span class="line"><span class="class"><span class="title">public</span> <span class="title">class</span> <span class="title">Producer_spring</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    RabbitTemplate rabbitTemplate;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testRabbitmq</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        String message = <span class="string">"Hello, Linn!"</span>;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        * 1.交换机名称</span></span><br><span class="line"><span class="comment">        * 2.routingKey</span></span><br><span class="line"><span class="comment">        * 3.message</span></span><br><span class="line"><span class="comment">        * */</span></span><br><span class="line">        rabbitTemplate.convertAndSend(RabbitmqConfig.EXCHANGE_TOPICS_INFORM, RabbitmqConfig.QUEUE_INFORM_SMS, message);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>消费者代码</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReceiveHandler</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RabbitListener</span>(queues = &#123;RabbitmqConfig.QUEUE_INFORM_SMS&#125;)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">receive_message</span><span class="params">(Message message)</span></span>&#123;<span class="comment">//参数还可以有 channel 去到通道信息</span></span><br><span class="line">        System.out.println(<span class="string">"receive message is :"</span> + message.getBody());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.flxlin.github.io/2020/02/25/Spring%E6%95%B4%E5%90%88Rabbitmq/" data-id="ck71w2qjn0000fkc903f1ghmq"
+         class="article-share-link">Share</a>
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rabbitmq/" rel="tag">Rabbitmq</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+
+
+
+        
+          
+
 <article id="post-消息队列-rabbitemq" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
   
   <div class="article-inner">
@@ -651,71 +727,6 @@
          class="article-share-link">Share</a>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/" rel="tag">Vue</a></li></ul>
-
-    </footer>
-
-  </div>
-
-  
-
-  
-
-</article>
-
-
-
-        
-          
-
-<article id="post-Python配合ffmpeg爬取视频" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
-  
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title" href="/2020/02/09/Python%E9%85%8D%E5%90%88ffmpeg%E7%88%AC%E5%8F%96%E8%A7%86%E9%A2%91/">Python配合ffmpeg爬取视频</a>
-    </h2>
-  
-  
-
-
-
-
-      </header>
-    
-
-    
-      <div class="article-meta">
-        <a href="/2020/02/09/Python%E9%85%8D%E5%90%88ffmpeg%E7%88%AC%E5%8F%96%E8%A7%86%E9%A2%91/" class="article-date">
-  <time datetime="2020-02-09T11:39:20.000Z" itemprop="datePublished">2020-02-09</time>
-</a>
-        
-      </div>
-    
-
-    
-
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-        <p><em>主要采用python配合ffmpeg对一些视频进行爬取，需要配置ffmpeg才能运行。</em></p>
-<h2 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h2>
-        
-          <a class="article-more-link" href="/2020/02/09/Python%E9%85%8D%E5%90%88ffmpeg%E7%88%AC%E5%8F%96%E8%A7%86%E9%A2%91/">Read More...</a>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://www.flxlin.github.io/2020/02/09/Python%E9%85%8D%E5%90%88ffmpeg%E7%88%AC%E5%8F%96%E8%A7%86%E9%A2%91/" data-id="ck6rhsqxk00095oc924pec9fy"
-         class="article-share-link">Share</a>
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
 
     </footer>
 

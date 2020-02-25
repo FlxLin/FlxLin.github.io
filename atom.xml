@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.flxlin.github.io/"/>
-  <updated>2020-02-24T10:16:49.275Z</updated>
+  <updated>2020-02-25T12:51:29.040Z</updated>
   <id>https://www.flxlin.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Spring整合Rabbitmq</title>
+    <link href="https://www.flxlin.github.io/2020/02/25/Spring%E6%95%B4%E5%90%88Rabbitmq/"/>
+    <id>https://www.flxlin.github.io/2020/02/25/Spring%E6%95%B4%E5%90%88Rabbitmq/</id>
+    <published>2020-02-25T12:43:54.000Z</published>
+    <updated>2020-02-25T12:51:29.040Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;配置依赖&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Rabbitmq" scheme="https://www.flxlin.github.io/tags/Rabbitmq/"/>
+    
+  </entry>
+  
+  <entry>
     <title>消息队列-RabbitMQ</title>
     <link href="https://www.flxlin.github.io/2020/02/24/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-rabbitemq/"/>
     <id>https://www.flxlin.github.io/2020/02/24/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97-rabbitemq/</id>
     <published>2020-02-24T10:04:30.000Z</published>
-    <updated>2020-02-24T10:16:49.275Z</updated>
+    <updated>2020-02-25T12:42:48.956Z</updated>
     
     <summary type="html">
     
